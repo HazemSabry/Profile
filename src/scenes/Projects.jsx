@@ -25,7 +25,7 @@ const Project = ({ title, image, link, description }) => {
   return (
     <div style={{ margin: "10px" }}>
       <motion.div variants={projectVariant} className="relative">
-        <a href={link} target="_blank">
+        <a href={link} rel="noreferrer" target="_blank">
           <div className={overlayStyles} style={{ overflow: "hidden" }}>
             <p className="text-2xl font-playfair">{title}</p>
             <p className="mt-7">{description}</p>
