@@ -31,11 +31,11 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
       />
 
       <AnchorLink
-        href="#Certification"
+        href="#education"
         className={`${
-          selectedPage === "Certification" ? selectedStyles : "bg-dark-grey"
+          selectedPage === "education" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
-        onClick={() => setSelectedPage("Certification")}
+        onClick={() => setSelectedPage("education")}
       />
 
       <AnchorLink
