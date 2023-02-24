@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import pillar from "../assets/project-1.png";
 import dashboard from "../assets/project-2.png";
 import Omnifood from "../assets/project-3.png";
+import CommEleEngineeringWebsite from "../assets/project-4.png";
 const container = {
   hidden: {},
   visible: {
@@ -103,12 +104,14 @@ const Projects = () => {
             link="https://omnifood-hazem-sabry.netlify.app/"
             description="A website to improve HTML, CSS, and JS skills offers tutorials, exercises, and quizzes to enhance proficiency in front-end web development."
           />
-          <Project title="Project 4" image={""} link="" />
-          <Project title="Project 5" image={""} link="" />
+          <Project
+            title="Comm-Ele-engineering-website"
+            image={CommEleEngineeringWebsite}
+            link="https://hazemsabry.github.io/Comm-Ele-engineering-website/"
+            description="Developed a modern and responsive website for the Electrical Engineering department at my college as a front-end web developer in my beginning."
+          />
 
           {/* ROW 3 */}
-          <Project title="Project 6" image={""} link="" />
-          <Project title="Project 7" image={""} link="" />
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
