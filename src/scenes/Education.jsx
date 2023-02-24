@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const MySkills = () => {
   return (
-    <section id="skills" className="pt-10 pb-24">
+    <section id="education" className="pt-10 pb-24">
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
@@ -25,47 +25,40 @@ const MySkills = () => {
         </motion.div>
       </div>
 
-      <div style={{ margin: "0 0 0 25vw" }}>
-        <div className="relative h-32">
+      <div style={{ margin: "0 0 0 20vw" }}>
+        <div className="relative h-42">
           <div className="z-10">
             <p className="font-playfair font-semibold text-3xl mt-3">Collage</p>
           </div>
-          <div className="w-1/2 md:w-3/4 h-32 absolute right-0 top-0 z-[-1]" />
           <p className="mt-5">
-            As a front-end web developer, I possess a wide range of technical
-            skills that allow me to design and build visually appealing,
-            user-friendly websites. My technical skillset includes proficiency
-            in HTML, CSS, JavaScript, and Bootstrap, ReactJS.
+            As a 2nd year Communication student at Alexandria Engineering
+            College, I have achieved a GPA of over 3.3, demonstrating my
+            commitment to academic excellence and dedication to my studies.
           </p>
         </div>
-        <div className="relative h-32">
+        <div className="relative h-42">
           <div className="z-10">
-            <p className="font-playfair font-semibold text-5xl"></p>
             <p className="font-playfair font-semibold text-3xl mt-3">
               High School
             </p>
           </div>
-          <div className="w-1/2 md:w-3/4 h-32 absolute right-0 top-0 z-[-1]" />
           <p className="mt-5">
-            As a front-end web developer, I possess a wide range of technical
-            skills that allow me to design and build visually appealing,
-            user-friendly websites. My technical skillset includes proficiency
-            in HTML, CSS, JavaScript, and Bootstrap, ReactJS.
+            During my secondary school years at Mohammed Karim School and
+            primary years at MLS School, I consistently earned a high academic
+            achievement, maintaining an average of 95% throughout three years,
+            demonstrating my dedication and hard work in my studies.
           </p>
         </div>
-        <div className="relative h-32">
+        <div className="relative h-42">
           <div className="z-10">
-            <p className="font-playfair font-semibold text-5xl"></p>
             <p className="font-playfair font-semibold text-3xl mt-3">
               Student Activity
             </p>
           </div>
-          <div className="w-1/2 md:w-3/4 h-32 absolute right-0 top-0 z-[-1]" />
           <p className="mt-5">
-            As a front-end web developer, I possess a wide range of technical
-            skills that allow me to design and build visually appealing,
-            user-friendly websites. My technical skillset includes proficiency
-            in HTML, CSS, JavaScript, and Bootstrap, ReactJS.
+            As a class delegate for two years, I collaborated closely with
+            doctors and their assistants, demonstrating my strong communication
+            and leadership skills in the student activities.
           </p>
         </div>
       </div>
