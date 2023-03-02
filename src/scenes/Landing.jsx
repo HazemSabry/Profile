@@ -53,6 +53,11 @@ const Landing = ({ setSelectedPage }) => {
             >
               Sabry
             </span>
+
+          <p className="mt-10 mb-7 text-sm text-center md:text-start">
+            As a web developer who is always seeking opportunities to learn and
+            improve his skills in programming languages.
+          </p>
           </p>
         </motion.div>
 
