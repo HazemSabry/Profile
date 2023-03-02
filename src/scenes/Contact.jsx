@@ -59,7 +59,7 @@ const Contact = () => {
           }}
           className="basis-1/2 mt-10 md:mt-0"
         >
-          <form name="contact" netlify>
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
             <label>
               <input
                 className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
