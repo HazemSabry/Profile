@@ -4,6 +4,7 @@ import pillar from "../assets/project-1.png";
 import dashboard from "../assets/project-2.png";
 import Omnifood from "../assets/project-3.png";
 import CommEleEngineeringWebsite from "../assets/project-4.png";
+import teslaCloneMaster from "../assets/project-5.png";
 const container = {
   hidden: {},
   visible: {
@@ -77,7 +78,6 @@ const Projects = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {/* ROW 1 */}
           <div
             className="flex justify-center text-center items-center p-10 bg-red
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
@@ -97,13 +97,20 @@ const Projects = () => {
             description="A website dashboard for user accounts is a platform displaying personalized information, settings, and controls for registered users to manage their profiles, subscriptions, and activities."
           />
 
-          {/* ROW 2 */}
+          <Project
+            title="Tesla-Clone-Master"
+            image={teslaCloneMaster}
+            link="https://effortless-kheer-b24264.netlify.app"
+            description="Tesla-clone-master is a front-end project created for self-training. Its landing page serves as an introduction, including a header section and a hero section."
+          />
+
           <Project
             title="Omnifood"
             image={Omnifood}
             link="https://omnifood-hazem-sabry.netlify.app/"
             description="A website to improve HTML, CSS, and JS skills offers tutorials, exercises, and quizzes to enhance proficiency in front-end web development."
           />
+
           <Project
             title="Comm-Ele-engineering-website"
             image={CommEleEngineeringWebsite}
@@ -111,7 +118,6 @@ const Projects = () => {
             description="Developed a modern and responsive website for the Electrical Engineering department at my college as a front-end web developer in my beginning."
           />
 
-          {/* ROW 3 */}
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
