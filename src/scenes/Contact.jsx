@@ -59,7 +59,7 @@ const Contact = () => {
           }}
           className="basis-1/2 mt-10 md:mt-0"
         >
-         <form netlify>
+         <form action="https://formspree.io/f/xwkjbnlr" method="POST">
   <input type="hidden" name="form-name" value="contact" />
   <label>
     <input
