@@ -54,11 +54,6 @@ const Landing = ({ setSelectedPage }) => {
               Sabry
             </span>
           </p>
-
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
-          </p>
         </motion.div>
 
         {/* CALL TO ACTIONS */}
