@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 const Contact = () => {
   const {
     register,
-    trigger,
     formState: { errors },
   } = useForm();
 
