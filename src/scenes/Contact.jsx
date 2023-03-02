@@ -59,7 +59,7 @@ const Contact = () => {
           }}
           className="basis-1/2 mt-10 md:mt-0"
         >
-         <form name="contact" netlify netlify-honeypot="bot-field" method="POST">
+         <form netlify>
   <input type="hidden" name="form-name" value="contact" />
   <label>
     <input
