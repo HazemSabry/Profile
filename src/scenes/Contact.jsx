@@ -9,14 +9,6 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (e) => {
-    console.log("~ e", e);
-    const isValid = await trigger();
-    if (!isValid) {
-      e.preventDefault();
-    }
-  };
-
   return (
     <section id="contact" className="contact py-48">
       {/* HEADINGS */}
@@ -68,21 +60,19 @@ const Contact = () => {
           }}
           className="basis-1/2 mt-10 md:mt-0"
         >
-          <form
-            target="_blank"
-            onSubmit={onSubmit}
-            action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6e"
-            method="POST"
-          >
-            <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
-              type="text"
-              placeholder="NAME"
-              {...register("name", {
-                required: true,
-                maxLength: 100,
-              })}
-            />
+          <form name="contact" method="POST" data-netlify="true">
+            <label>
+              <input
+                className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+                type="text"
+                placeholder="NAME"
+                name="name"
+                {...register("name", {
+                  required: true,
+                  maxLength: 100,
+                })}
+              />
+            </label>
             {errors.name && (
               <p className="text-red mt-1">
                 {errors.name.type === "required" && "This field is required."}
@@ -90,15 +80,18 @@ const Contact = () => {
               </p>
             )}
 
-            <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
-              type="text"
-              placeholder="EMAIL"
-              {...register("email", {
-                required: true,
-                pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-              })}
-            />
+            <label>
+              <input
+                className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+                type="email"
+                placeholder="EMAIL"
+                name="email"
+                {...register("email", {
+                  required: true,
+                  pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                })}
+              />
+            </label>
             {errors.email && (
               <p className="text-red mt-1">
                 {errors.email.type === "required" && "This field is required."}
@@ -106,17 +99,19 @@ const Contact = () => {
               </p>
             )}
 
-            <textarea
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
-              name="message"
-              placeholder="MESSAGE"
-              rows="4"
-              cols="50"
-              {...register("message", {
-                required: true,
-                maxLength: 2000,
-              })}
-            />
+            <label>
+              <textarea
+                className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+                name="message"
+                placeholder="MESSAGE"
+                rows="4"
+                cols="50"
+                {...register("message", {
+                  required: true,
+                  maxLength: 2000,
+                })}
+              />
+            </label>
             {errors.message && (
               <p className="text-red mt-1">
                 {errors.message.type === "required" &&
