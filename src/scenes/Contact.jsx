@@ -59,74 +59,74 @@ const Contact = () => {
           }}
           className="basis-1/2 mt-10 md:mt-0"
         >
-          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <label>
-              <input
-                className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
-                type="text"
-                placeholder="NAME"
-                name="name"
-                {...register("name", {
-                  required: true,
-                  maxLength: 100,
-                })}
-              />
-            </label>
-            {errors.name && (
-              <p className="text-red mt-1">
-                {errors.name.type === "required" && "This field is required."}
-                {errors.name.type === "maxLength" && "Max length is 100 char."}
-              </p>
-            )}
+         <form name="contact" netlify netlify-honeypot="bot-field" method="POST">
+  <input type="hidden" name="form-name" value="contact" />
+  <label>
+    <input
+      className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+      type="text"
+      placeholder="NAME"
+      name="name"
+      {...register("name", {
+        required: true,
+        maxLength: 100,
+      })}
+    />
+  </label>
+  {errors.name && (
+    <p className="text-red mt-1">
+      {errors.name.type === "required" && "This field is required."}
+      {errors.name.type === "maxLength" && "Max length is 100 char."}
+    </p>
+  )}
 
-            <label>
-              <input
-                className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
-                type="email"
-                placeholder="EMAIL"
-                name="email"
-                {...register("email", {
-                  required: true,
-                  pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                })}
-              />
-            </label>
-            {errors.email && (
-              <p className="text-red mt-1">
-                {errors.email.type === "required" && "This field is required."}
-                {errors.email.type === "pattern" && "Invalid email address."}
-              </p>
-            )}
+  <label>
+    <input
+      className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+      type="email"
+      placeholder="EMAIL"
+      name="email"
+      {...register("email", {
+        required: true,
+        pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+      })}
+    />
+  </label>
+  {errors.email && (
+    <p className="text-red mt-1">
+      {errors.email.type === "required" && "This field is required."}
+      {errors.email.type === "pattern" && "Invalid email address."}
+    </p>
+  )}
 
-            <label>
-              <textarea
-                className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
-                name="message"
-                placeholder="MESSAGE"
-                rows="4"
-                cols="50"
-                {...register("message", {
-                  required: true,
-                  maxLength: 2000,
-                })}
-              />
-            </label>
-            {errors.message && (
-              <p className="text-red mt-1">
-                {errors.message.type === "required" &&
-                  "This field is required."}
-                {errors.message.type === "maxLength" &&
-                  "Max length is 2000 char."}
-              </p>
-            )}
+  <label>
+    <textarea
+      className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+      name="message"
+      placeholder="MESSAGE"
+      rows="4"
+      cols="50"
+      {...register("message", {
+        required: true,
+        maxLength: 2000,
+      })}
+    />
+  </label>
+  {errors.message && (
+    <p className="text-red mt-1">
+      {errors.message.type === "required" && "This field is required."}
+      {errors.message.type === "maxLength" && "Max length is 2000 char."}
+    </p>
+  )}
 
-            <button
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
-              type="submit"
-            >
-              SEND ME A MESSAGE
-            </button>
-          </form>
+  <button
+    className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+    type="submit"
+  >
+    SEND ME A MESSAGE
+  </button>
+</form>
+
         </motion.div>
       </div>
     </section>
